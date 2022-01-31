@@ -1,0 +1,18 @@
+{
+    "name": "weblink/acesso",
+    "description": "project for acess client computer",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wilton Costa",
+            "email": "wiltonmeg4@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
