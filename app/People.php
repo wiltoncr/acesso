@@ -5,7 +5,7 @@ namespace App;
 class People
 {
     protected $name;
-    protected $second_name;
+    protected $name_fantasy;
     protected $type_people; /**TRUE é fisica e False é juridica */
     protected $email;
     protected $cpf;
@@ -14,7 +14,7 @@ class People
 
     public function __construct(
         string $name,
-        string $second_name,
+        string $name_fantasy,
         bool $type_people,
         string $email,
         string $cpf = "",
@@ -22,7 +22,7 @@ class People
         bool $active = true
     ) {
         $this->name = $name;
-        $this->second_name = $second_name;
+        $this->name_fantasy = $name_fantasy;
         $this->type_people = $type_people;
         $this->email = $email;
         
@@ -56,21 +56,21 @@ class People
     }
 
     /**
-     * Get the value of second_name
+     * Get the value of name_fantasy
      */ 
-    public function getSecond_name()
+    public function getName_fantasy()
     {
-        return $this->second_name;
+        return $this->name_fantasy;
     }
 
     /**
-     * Set the value of second_name
+     * Set the value of name_fantasy
      *
      * @return  self
      */ 
-    private function setSecond_name($second_name)
+    private function setName_fantasy($name_fantasy)
     {
-        $this->second_name = $second_name;
+        $this->name_fantasy = $name_fantasy;
 
         return $this;
     }
