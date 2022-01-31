@@ -2,7 +2,9 @@
 
 namespace App;
 
-class People
+use Src\Database\Connect;
+
+class People extends \Src\Database\Connect
 {
     protected $name;
     protected $name_fantasy;
@@ -33,6 +35,11 @@ class People
         }
         
         $this->active = $active;
+    }
+
+    public function listPeople() {
+       $result =  Connect::selectDB("SELECT * FROM pessoa");
+       return $result;
     }
 
     /**

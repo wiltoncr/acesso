@@ -16,10 +16,6 @@ abstract class Connect
     private static $password = "";
     private static $db       = "acesso";
 
-    /**
-     * @var PDOStatement
-     */
-    public static $conn;
 
     /*Método construtor do banco de dados*/
     private function __construct(){}
@@ -61,7 +57,7 @@ abstract class Connect
         $this->conn = null;
     }
     /*Método select que retorna um VO ou um array de objetos*/
-    public function selectDB($sql,$params=null,$class=null){
+    public function selectDB($sql, $params=null, $class=null){
         $query=$this->connect()->prepare($sql);
         $query->execute($params);
         $rs = null;
