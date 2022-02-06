@@ -38,7 +38,7 @@ class People extends \Src\Database\Connect
     }
 
     public function listPeople() {
-       $result =  Connect::selectDB("SELECT * FROM pessoa");
+       $result =  Connect::selectDB("SELECT * FROM users");
        return $result;
     }
 

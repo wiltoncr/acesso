@@ -13,8 +13,8 @@ abstract class Connect
     private static $host     = "localhost";
     private static $port     = "3306";
     private static $user     = "root";
-    private static $password = "";
-    private static $db       = "acesso";
+    private static $password = "1507";
+    private static $db       = "fullstackphp";
 
 
     /*Método construtor do banco de dados*/
@@ -95,6 +95,7 @@ abstract class Connect
         $query=$this->connect()->prepare($sql);
         $query->execute($params);
         $rs = $query->rowCount() or die(print_r($query->errorInfo(), true));
+        
         self::__destruct();
         return $rs;
     }
