@@ -20,7 +20,7 @@ class User extends Model
     /**
      * @var string $entity database table
      */
-    protected static $entity = "users";
+    protected static $entity = "user";
 
 
     /**

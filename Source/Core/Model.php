@@ -111,8 +111,8 @@ abstract class Model
         try {
             $stmt = Connect::getInstance()->prepare($select);
             if ($params) {
-                parse_str($params, $params);
-                foreach ($params as $key => $value) {
+                parse_str($params, $paramsA);
+                foreach ($paramsA as $key => $value) {
                     $type = (is_numeric($value) ? \PDO::PARAM_INT : \PDO::PARAM_STR);
                     $stmt->bindValue(":{$key}", $value, $type);
                 }
@@ -163,8 +163,8 @@ abstract class Model
     {
         try {
             $stmt = Connect::getInstance()->prepare("DELETE FROM {$entity} WHERE {$terms}");
-            parse_str($params, $params);
-            $stmt->execute($this->filter($params));
+            parse_str($params, $paramsA);
+            $stmt->execute($this->filter($paramsA));
             return ($stmt->rowCount() ?? 1);
         } catch (\PDOException $exception) {
             $this->fail = $exception;

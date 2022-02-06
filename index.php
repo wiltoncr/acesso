@@ -1,13 +1,13 @@
 <?php
 
-use App\People;
-use Src\Database\Connect;
+use Source\Models\User;
 
-include_once __DIR__."/vendor/autoload.php";
-$wilton = new People("wilton Costa reis", "", true, "wiltonmeg4@gmail.com", "61841169323");
+include_once __DIR__."/Source/autoload.php";
 
-$listPeople = $wilton->listPeople();
+$user = new User();
+
+$wilton = $user->find("wiltonmeg4@gmail.com");
 
 echo "<pre>";
-var_dump($listPeople);
+var_dump($wilton->data());
 echo "</pre>";
