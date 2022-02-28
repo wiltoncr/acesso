@@ -11,9 +11,9 @@ define('DEBUG', true);
 
 define('DB_TYPE', 'mysql'); // mysql or pgsql
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'id15027154_mvc');
-define('DB_USER', 'id15027154_root');
-define('DB_PASS', '0ons>l_CDhCZ!]dN');
+define('DB_NAME', 'mvc');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 define('DB_PORT', '3306');// 3306 or 5432
 define('DB_CHARSET', 'utf8mb4');
 
