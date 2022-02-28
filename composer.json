@@ -1,18 +1,24 @@
 {
-    "name": "weblink/acesso",
-    "description": "project for acess client computer",
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Source\\": "Source/"
-        }
-    },
+    "name": "ribafs/mini-full",
+    "description": "Aplicactivo mini completo em PHP com MVC",
+    "type": "project",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Wilton Costa",
-            "email": "wiltonmeg4@gmail.com"
+            "name": "Ribamar FS",
+            "email": "ribafs@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+	"minimum-stability": "stable",
+  "require":{
+    "php": ">=5.6.4"
+  },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "App\\" : "App/",
+            "Core\\" : "Core/"
+        }
+    }
 }

@@ -1,0 +1,32 @@
+<div class="container">
+    <h2 class="text-center">Acesso</h2>
+    <div>
+        <br>
+        <form action="<?php echo URL; ?>acesso/add" method="POST" id="form" autocomplete="off">   
+        <table class="table table-hover table-stripped">
+            <tr><td><label>Acesso</label></td>
+            <td><input class="form-control" type="text" name="acesso" value="" placeholder="Digite o acesso remoto" required /></td></tr>
+            <tr><td><label>Apelido</label></td>
+            <td><input class="form-control" type="text" name="apelido" value="" placeholder="Digite um apelido" required /></td></tr>
+            <tr><td><label>tipo</label></td>
+            <td>
+                <select class="form-control" type="text" name="tipo_acesso" form="form" required>
+                    <option value="Anydesk">Anydesk</option>
+                    <option value="TeamViewer">TeamViewer</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </td></tr>
+            <tr><td><label>Cliente</label></td>
+                <td>
+                    <select class="form-control" type="search"  name="id_cliente" form="form" required>
+                        <?php foreach ($obj as $value) { ?>
+                        <option value="<?php echo $value->id; ?>"><?php echo $value->nome; ?></option>
+                        <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr><td></td><td><input type="submit" name="submit_add_acesso" value=" Enviar " class="btn btn-primary btn-sm"/></td></tr>
+		</table>
+        </form>
+    </div>
+</div>

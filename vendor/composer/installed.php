@@ -2,21 +2,21 @@
     'root' => array(
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'type' => 'library',
+        'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'd6ec05cfd62a7f1cb2e5ea5121dc9bab681808d4',
-        'name' => 'weblink/acesso',
+        'reference' => 'ae423c96d9d870ad323ce9a08b0a91319d83414d',
+        'name' => 'wiltonc/acesso-remoto',
         'dev' => true,
     ),
     'versions' => array(
-        'weblink/acesso' => array(
+        'wiltonc/acesso-remoto' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'type' => 'library',
+            'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'd6ec05cfd62a7f1cb2e5ea5121dc9bab681808d4',
+            'reference' => 'ae423c96d9d870ad323ce9a08b0a91319d83414d',
             'dev_requirement' => false,
         ),
     ),
