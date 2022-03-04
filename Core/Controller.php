@@ -10,7 +10,7 @@ class Controller
 
     public function __construct($table ='clientes'){
       $this->table = $table;
-      $this->model = '\\App\\Models\\'.ucfirst($this->table) . 'Model';
+      $this->model = '\\App\\Models\\'.ucfirst($this->table) . 'Model'; 
     }
 
     public function index()
