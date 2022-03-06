@@ -19,8 +19,8 @@ define('DB_CHARSET', 'utf8mb4');
 
 define('API_VHSYS_URL', 'https://api.vhsys.com/');
 define('API_VHSYS_VERSION', 'v2/');
-define('API_VHSYS_TOKEN', ''); /** Coloque sua credencial*/
-define('API_VHSYS_ACCESS', '');/** Coloque sua credencial*/
+define('API_VHSYS_TOKEN', 'vrEaSiKFA3ZNGHnnRsMxgt8OY873JI');
+define('API_VHSYS_ACCESS', 'Uu2zsDQUCpiQlsA0rdcDrYk8lvR6');
 
 if(DEBUG) {
   error_reporting(E_ALL);
