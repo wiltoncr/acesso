@@ -16,7 +16,6 @@ class Controller
     public function index()
     {
         $Obj = new $this->model($this->table);
-
         if(!empty($_GET['search'])){
             $todos = $Obj->filterRegs($_GET['search']);
         }else {

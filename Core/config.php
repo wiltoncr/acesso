@@ -17,6 +17,11 @@ define('DB_PASS', '1507');
 define('DB_PORT', '3306');// 3306 or 5432
 define('DB_CHARSET', 'utf8mb4');
 
+define('API_VHSYS_URL', 'https://api.vhsys.com/');
+define('API_VHSYS_VERSION', 'v2/');
+define('API_VHSYS_TOKEN', ''); /** Coloque sua credencial*/
+define('API_VHSYS_ACCESS', '');/** Coloque sua credencial*/
+
 if(DEBUG) {
   error_reporting(E_ALL);
   ini_set('display_errors', 1);

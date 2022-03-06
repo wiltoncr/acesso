@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Lista de Clientes cadastrados</h1>
+    <?php foreach($data as $cliente){ ?>
+        <div>
+            <p><?= "Nome: ". $cliente->razao_cliente?></p>
+            <p><?= "Nemero: ". $cliente->celular_cliente?></p>
+            <p><?= "Email: ". $cliente->email_cliente?></p>
+        </div>
+        <hr>
+    <?php } ?>
+</div>

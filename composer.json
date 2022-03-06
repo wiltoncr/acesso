@@ -1,12 +1,12 @@
 {
-    "name": "ribafs/mini-full",
-    "description": "Aplicactivo mini completo em PHP com MVC",
+    "name": "wiltoncc/acessofacil",
+    "description": "Aplicactivo mini completo em PHP com MVC para acesso remoto",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ribamar FS",
-            "email": "ribafs@gmail.com"
+            "name": "Wilton CR",
+            "email": "wiltonmeg4@gmail.com"
         }
     ],
 	"minimum-stability": "stable",
@@ -19,6 +19,10 @@
         {
             "App\\" : "App/",
             "Core\\" : "Core/"
-        }
+        },
+        "files": 
+        [
+            "App/Helpers/Helpers.php"
+        ]
     }
 }

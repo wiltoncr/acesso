@@ -35,7 +35,7 @@ class Router
         		// Caso o action seja de tamanho 0, chame o controller com o action index()
             if (strlen($this->urlAction) == 0) { 
                 $this->urlController->index();
-                // Caso o actionna url não tenha comprimento zero e não exista, dispare o ErrorController com o parâmetro 1 - action
+                // Caso o action na url não tenha comprimento zero e não exista, dispare o ErrorController com o parâmetro 1 - action
             } else {
                 $return = $this->urlAction;
                 $page = new \Core\ErrorController();
@@ -58,7 +58,6 @@ class Router
           $url = trim($_GET['url'], '/'); // A origem deste url é o public/.htaccess
           $url = filter_var($url, FILTER_SANITIZE_URL); // Filtrar a url de caracteres estranhos a uma url
           $url = explode('/', $url); // Criar um array com as aprtes da url: controller/action/params
-
           $this->urlController = isset($url[0]) ? $url[0] : null; // Criando a $this->urlController com $url[0]
           $this->urlAction = isset($url[1]) ? $url[1] : null; // Criando a $this->urlAction com $url[1]
 
